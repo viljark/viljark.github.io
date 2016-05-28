@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
     <h1 v-on:click="increase()">{{ msg }} <span v-for="n in counter">!</span></h1>
+    <p>
+      This is a sample app using <a target="_blank" href="http://vuejs-templates.github.io/webpack" target="_blank">vuejs webpack templates</a>.
+    </p>
   </div>
 </template>
 
@@ -8,10 +11,6 @@
 export default {
   data () {
     return {
-      // note: changing this line won't causes changes
-      // with hot-reload because the reloaded component
-      // preserves its current state and we are modifying
-      // its initial state.
       msg: 'Hello Vue.js & Webpack!',
       counter: 0
     }
@@ -26,7 +25,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1 {
-  color: #42b983;
-}
 </style>

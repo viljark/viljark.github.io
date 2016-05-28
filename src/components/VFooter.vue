@@ -36,7 +36,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .footer {
-  border-top: 2px solid #42b983;
+  border-top: 2px solid #05b7ee;
   background: #fefefe;
   padding: 20px;
 }
