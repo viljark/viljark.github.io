@@ -5,6 +5,7 @@
 ## Deployment to GitHub pages
 ```
 npm run build
+git add --all
 git commit -am "update live" && push
 git push origin `git subtree split --prefix dist dev`:master --force
 ```
