@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e82d7aa0-88dc-42d1-9df0-1fdb1e60abee" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/static/css/app.4e9ab57fb35f73a718f86a5a9d5b50a5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/static/css/app.4e9ab57fb35f73a718f86a5a9d5b50a5.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/static/js/0.51294a1741c521ad6939.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/static/js/0.51294a1741c521ad6939.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/static/js/1.f864a08972c7d877382c.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/static/js/1.f864a08972c7d877382c.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/static/js/app.9577d47db95f8675a51a.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/static/js/app.9577d47db95f8675a51a.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/static/js/manifest.9bf2b15815f839dff51c.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/static/js/manifest.9bf2b15815f839dff51c.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/static/js/vendor.872069ea8c0dde0ca6a3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/static/js/vendor.872069ea8c0dde0ca6a3.js.map" afterPath="" />
+    <list default="true" id="e82d7aa0-88dc-42d1-9df0-1fdb1e60abee" name="Default" comment="replaced fixed width from content with flex: 1 1 auto;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/css/app.1faabb6539e8f10921c568ace1a1db76.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/css/app.1faabb6539e8f10921c568ace1a1db76.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/app.e2281e6a02c9b5dd0fcf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/app.e2281e6a02c9b5dd0fcf.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/manifest.939999091a1c4a95bd83.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/manifest.939999091a1c4a95bd83.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.scss" afterPath="$PROJECT_DIR$/src/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/VHeader.vue" afterPath="$PROJECT_DIR$/src/components/VHeader.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
     </list>
     <ignored path="viljark.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,8 +79,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            <state relative-caret-position="238">
+              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -192,6 +185,7 @@
         <option value="$PROJECT_DIR$/src/components/VFooter.vue" />
         <option value="$PROJECT_DIR$/src/app.scss" />
         <option value="$PROJECT_DIR$/src/components/VHeader.vue" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -838,7 +832,7 @@
       <option name="presentableId" value="Default" />
       <updated>1464431676846</updated>
       <workItem from="1464431680566" duration="2941000" />
-      <workItem from="1464435629838" duration="42283000" />
+      <workItem from="1464435629838" duration="42407000" />
     </task>
     <task id="LOCAL-00001" summary="Vuejs &amp; Webpack">
       <created>1464441088617</created>
@@ -903,11 +897,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464551064406</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="replaced fixed width from content with flex: 1 1 auto;">
+      <created>1464557436416</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1464557436416</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45224000" />
+    <option name="totallyTimeSpent" value="45348000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -960,7 +961,8 @@
     <MESSAGE value="updated readme" />
     <MESSAGE value="new design, pages, transitions" />
     <MESSAGE value="added vue-router, added content, separated home page into multiple files" />
-    <option name="LAST_COMMIT_MESSAGE" value="added vue-router, added content, separated home page into multiple files" />
+    <MESSAGE value="replaced fixed width from content with flex: 1 1 auto;" />
+    <option name="LAST_COMMIT_MESSAGE" value="replaced fixed width from content with flex: 1 1 auto;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1143,7 +1145,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1255,8 +1257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        <state relative-caret-position="238">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
           <folding />
         </state>
       </provider>
