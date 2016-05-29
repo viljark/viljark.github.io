@@ -33,7 +33,12 @@
   @import "../variables.scss";
 
   nav {
-    width: 200px;
+    flex: 0 0 200px;
+  }
+  @media all and (max-width: 700px) {
+    nav {
+      flex: none;
+    }
   }
   .nav__list {
     list-style: none;
