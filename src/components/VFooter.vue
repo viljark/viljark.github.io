@@ -34,7 +34,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style lang="scss">
 .footer {
   border-top: 2px solid #05b7ee;
   background: #fefefe;
@@ -60,6 +60,13 @@ export default {
 .footer__item {
   width: 100%;
   text-align: center;
+  a {
+    color: #05b7ee;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
 }
 
 </style>

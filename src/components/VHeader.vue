@@ -1,14 +1,14 @@
 <template>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item" v-bind:class="{'nav__item--active': page == 'hello'}">
-            <a class="nav__link" v-on:click="changePage('hello')" href="#">Home</a>
+          <li class="nav__item">
+            <a class="nav__link" v-link="{ path: '/', activeClass: 'nav__link--active', exact: true}">Home</a>
           </li>
-          <li class="nav__item" v-bind:class="{'nav__item--active': page == 'work'}">
-            <a class="nav__link" v-on:click="changePage('work')" href="#">Work</a>
+          <li class="nav__item">
+            <a class="nav__link" v-link="{ path: '/work', activeClass: 'nav__link--active'}">Work</a>
           </li>
-          <li class="nav__item" v-bind:class="{'nav__item--active': page == 'contact'}">
-            <a class="nav__link" v-on:click="changePage('contact')" href="#">Stuff</a>
+          <li class="nav__item">
+            <a class="nav__link" v-link="{ path: '/stuff', activeClass: 'nav__link--active'}">Stuff</a>
           </li>
         </ul>
       </nav>
@@ -30,6 +30,8 @@
     }
 </script>
 <style lang="scss">
+  @import "../variables.scss";
+
   nav {
     width: 200px;
   }
@@ -46,11 +48,6 @@
   .nav__item {
     width: 100%;
   }
-  .nav__item--active .nav__link {
-    border-color: #05b7ee;
-    color: #05b7ee;
-
-  }
   .nav__link {
     display: inline-block;
     overflow: hidden;
@@ -63,8 +60,12 @@
     height: 23px;
     border-bottom: 1px solid rgba(204, 204, 204, 0.52);
     font-weight: bold;
-    color: #2c3e50;
+    color: $text-color;
     &:hover {
+      color: #05b7ee;
+    }
+    &.nav__link--active {
+      border-color: #05b7ee;
       color: #05b7ee;
     }
   }

@@ -1,0 +1,112 @@
+@import "./variables.scss";
+
+html {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100%;
+  color: $text-color;
+  font-family: Roboto Slab, Source Sans Pro, Helvetica, sans-serif;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  display: flex;
+  flex: 1;
+  width: 900px;
+  border-radius: 5px;
+  text-align: left;
+  margin: 3vh auto 2vh;
+  font-size: 14px;
+  overflow: hidden;
+  a {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
+.content {
+  width: 700px;
+  padding: 0 25px 25px;
+  position: relative;
+  overflow: hidden;
+}
+@media all and (max-width: 900px) {
+  main {
+    width: 100%;
+    margin: 3vh 0 6vh;
+    padding: 0 3vw;
+  }
+}
+@media all and (max-width: 700px) {
+  main {
+    flex-direction: column;
+  }
+  .content {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 7% 25px;
+  }
+}
+h1 {
+  font-size: 18px;
+  margin: 0 0 1em;
+}
+h2 {
+  font-size: 14px;
+  margin: 0 0 .5em;
+}
+a {
+  color: $text-color;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+  &:hover {
+    color: #05b7ee;
+  }
+}
+
+p {
+  margin: 0 0 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.fadein-enter {
+  animation: fadein .5s;
+}
+.fadein-leave {
+  position: absolute;
+  top: 0;
+  animation: fadeout .5s;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  50% {
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
