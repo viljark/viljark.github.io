@@ -2,13 +2,13 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" v-link="{ path: '/', activeClass: 'nav__link--active', exact: true}">Home</a>
+            <router-link class="nav__link" :to="{ path: '/'}" exact activeClass="nav__link--active" >Home</router-link>
           </li>
           <li class="nav__item">
-            <a class="nav__link" v-link="{ path: '/work', activeClass: 'nav__link--active'}">Work</a>
+            <router-link class="nav__link" :to="{ path: '/work'}" activeClass="nav__link--active">Work</router-link>
           </li>
           <li class="nav__item">
-            <a class="nav__link" v-link="{ path: '/stuff', activeClass: 'nav__link--active'}">Stuff</a>
+            <router-link class="nav__link" :to="{ path: '/stuff'}" activeClass="nav__link--active">Stuff</router-link>
           </li>
         </ul>
       </nav>
@@ -23,7 +23,6 @@
       props: ["page"],
       methods: {
         changePage: function(page) {
-          //this.$dispatch('pagechange', page);
           this.page = page;
         }
       }
