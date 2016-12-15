@@ -5,6 +5,9 @@
     </h1>
     <ul>
       <li>
+        <a href="https://github.com/viljark">My github</a>
+      </li>
+      <li>
         <a href="https://codepen.io/viljark">My codepen</a>
       </li>
       <li>
@@ -16,13 +19,13 @@
 
 <script>
   export default {
-    data () {
+    data() {
       return {
         counter: 0
       }
     },
     methods: {
-      increase: function() {
+      increase: function () {
         this.counter = this.counter + 1;
       }
     }

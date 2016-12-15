@@ -2,30 +2,30 @@
   <div id="app">
     <main>
       <v-header :page="page"></v-header>
-      <section class="content">
+      <div class="content">
         <transition name="fadein">
           <router-view class="view">
           </router-view>
         </transition>
-      </section>
+      </div>
     </main>
     <v-footer></v-footer>
   </div>
 </template>
 
 <script>
-  import VHeader from './components/VHeader'
-  import VFooter from './components/VFooter'
+  import VHeader from './components/v-header'
+  import VFooter from './components/v-footer'
 
   export default {
-    data(){
+    data() {
       return {
         page: 'hello'
       }
     },
     components: {
-      VFooter,
-      VHeader
+      VHeader,
+      VFooter
     },
     events: {
       pagechange: function (page) {

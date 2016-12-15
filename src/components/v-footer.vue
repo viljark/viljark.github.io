@@ -24,7 +24,7 @@
 
 <script>
   export default {
-    data () {
+    data() {
       return {}
     }
   }
@@ -64,6 +64,9 @@
       color: #05b7ee;
       &:hover {
         text-decoration: underline;
+      }
+      &:focus {
+
       }
     }
 

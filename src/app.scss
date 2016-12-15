@@ -13,6 +13,14 @@ body {
   font-family: Roboto Slab, Source Sans Pro, Helvetica, sans-serif;
 }
 
+ul {
+  margin: 0 0 15px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
 #app {
   display: flex;
   flex-direction: column;
